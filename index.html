@@ -27,7 +27,7 @@
     <meta name="robots" content="noarchive"/>
     <meta name="googlebot" content="noarchive"/>
     <meta name="theme-color" content="#00adff"/>
-    <meta content="#00adff" name="msapplication-TileColor"/> 
+    <meta content="#00adff" name="msapplication-TileColor"/>
     <style>
       body {
       background: #fff;
@@ -90,12 +90,12 @@
       overflow: hidden;
       font-size: 22.5px;
       text-decoration: none;
-      padding: 2px 0px;
-      color: white;
+      padding: 1px 0px;
+      color: #495057;
+      border-radius: 5px;
+      border: 2px solid #495057;
       width: 50px;
       line-height: 1.5;
-      background: #495057;
-      border: 0;
       }
       .tip {
       background: #f5f5f5;
@@ -207,11 +207,16 @@
       </div>
     </header>
     <section id="instagram-widget">
+      <div class="feedgrabbr_widget" id="fgid_26339d39d2cb2b5843218186a"></div>
       <div class="feedgrabbr_widget" id="fgid_fe20607a62d527f1865fd2f25"></div>
-      <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_fe20607a62d527f1865fd2f25");</script>
-      <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
     </section>
     <!-- Scripts -->
+    <script defer src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+    <script>
+    if (typeof fg_widgets === "undefined") fg_widgets = new Array();
+    fg_widgets.push("fgid_26339d39d2cb2b5843218186a");
+    fg_widgets.push("fgid_fe20607a62d527f1865fd2f25");
+    </script>
     <script type="text/javascript">
       window.addEventListener("resize", onResizeFunction);
       window.addEventListener("load", onLoadFunction);
@@ -227,5 +232,6 @@
         onResizeFunction();
       };
     </script>
+    <!-- /Scripts -->
   </body>
 </html>
