@@ -61,6 +61,9 @@
       font-family: Roboto, Helvetica, Arial, sans-serif;
       font-size: 14px;
       }
+      a {
+        color: #00adff;
+      }
       .hidden, .oculto {
       position: absolute !important;
       display: none !important;
@@ -161,6 +164,22 @@
       text-decoration: none;
       color: #495057;
       }
+      /* CTA */
+      .cta {
+          vertical-align: text-top;
+          color: #00adff;
+      }
+
+      .cta a {
+          text-decoration: none;
+      }
+
+      .cta a:hover, .cta a:focus {
+          opacity: 0.8;
+          font-size: 15px;
+          font-weight: 500;
+      }
+      /* CTA */
       @media only screen and (min-device-width: 320px) and (max-device-width:1024px) {
         .uw-cardwall {
         height:auto!important;
@@ -329,6 +348,9 @@
               <a alt="Towards AI News - RSS Feed" class="fa fa-rss" href="https://medium.com/feed/towards-artificial-intelligence" rel="noopener" target="_blank" title="Towards AI News - RSS Feed"></a>
             </li>
           </ul>
+        </div>
+        <div class="cta">
+          [ <a href="https://towardsai.net/subscribe" target="_blank" rel="noopener">Subscribe</a> ] | [ <a href="https://towardsai.net/members" target="_blank" rel="noopener">Join us</a> ]
         </div>
         <span>Tap Photo to See Details</span>
       </div>
