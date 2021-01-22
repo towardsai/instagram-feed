@@ -43,9 +43,9 @@
     <!-- /OG:Graph Protocol -->
 
     <link rel="icon" type="image/png" href="https://towardsai.net/wp-content/uploads/2019/05/towards-ai-square-circle-png.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,700,700italic" media="none" onload="if(media!='all')media='all'"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" media="none" onload="if(media!='all')media='all'"/>
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,700,700italic"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"/>
     </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript>
@@ -58,7 +58,7 @@
     <style>
       body {
       background: #fff;
-      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-family: Poppins, Helvetica, Arial, sans-serif;
       font-size: 14px;
       }
       a {
@@ -210,7 +210,7 @@
         }
       }
       /* Cookie Consent */
-            .tai-gdpr-ccpa {
+          .tai-gdpr-ccpa {
                 width: 90vw;
                 margin-left: 5vw;
                 margin-right: 5vw;
@@ -244,6 +244,7 @@
                 width: 40px;
                 height: 40px;
                 padding: 5px;
+                cursor: pointer;
             }
 
             @media screen and (min-width: 768px) and (max-width: 1920px) {
@@ -309,11 +310,11 @@
   </head>
   <body>
     <header>
-      <a href="https://www.instagram.com/towards_ai/?hl=en" aria-hidden="true" tabindex="-1">
-        <div class="logo">
-          <img src="https://towardsai.net/wp-content/uploads/2019/05/towards-ai-square-circle-png.png" alt="Towards AI">
-        </div>
-      </a>
+      <div class="logo">
+        <a href="https://www.instagram.com/towards_ai/?hl=en" aria-hidden="true" tabindex="-1">
+            <img src="https://towardsai.net/wp-content/uploads/2019/05/towards-ai-square-circle-png.png" alt="Towards AI">
+        </a>
+      </div>
       <a title="Go Back" class="btn-back" href="instagram://user?username=towards_ai">
       <i class="fa fa-arrow-left"></i>
       </a>
@@ -321,7 +322,7 @@
         <div class="social-media">
           <ul>
             <li>
-              <a alt="Towards AI Website" class="fa fa-globe" href="https://towardsai.net/p" rel="noopener" target="_blank" title="Towards AI"></a>
+              <a alt="Towards AI Website" class="fa fa-globe" href="https://towardsai.net/?utm_source=feed.towardsai.net&utm_medium=referral" rel="noopener" target="_blank" title="Towards AI"></a>
             </li>
             <li>
               <a alt="Towards AI on Google News" class="fa fa-google" href="https://news.google.com/publications/CAAqBwgKMNiLmgswgpayAw?oc=3&ceid=US:en" rel="noopener" target="_blank" title="Towards AI on Google News"></a>
@@ -350,7 +351,8 @@
           </ul>
         </div>
         <div class="cta">
-          [ <a href="https://towardsai.net/subscribe" target="_blank" rel="noopener">Subscribe</a> ] | [ <a href="https://towardsai.net/members" target="_blank" rel="noopener">Join us</a> ]
+          [ <a href="https://medium.com/towards-artificial-intelligence/newsletters/towards-ai-newsletter?utm_source=feed.towardsai.net&utm_medium=referral" target="_blank" rel="noopener">Subscribe</a> ] |
+          [ <a href="https://launchpass.com/towards-ai/member?utm_source=feed.towardsai.net&utm_medium=referral" target="_blank" rel="noopener">Join us</a> ]
         </div>
         <span>Tap Photo to See Details</span>
       </div>
@@ -394,6 +396,15 @@
       function onLoadFunction(e){
         onResizeFunction();
       };
+
+      function closeCookieDialog() {
+          document.getElementById("cookie-consent").style.display = "none";
+          return false;
+      }
+
+      setTimeout(function() {
+          closeCookieDialog();
+      }, 15000);
     </script>
     <!-- /Scripts -->
   </body>
