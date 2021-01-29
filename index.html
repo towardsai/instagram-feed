@@ -9,7 +9,7 @@
 <html>
   <head>
     <script src="https://www.googletagmanager.com/gtag/js?id=G-9D3HKKFV1Q" type="text/javascript"></script>
-    <script type="text/javascript">function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9D3HKKFV1Q");</script>
+    <script type="text/javascript">function ga(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],ga("js",new Date),ga("config","G-9D3HKKFV1Q");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -407,8 +407,9 @@
       }, 15000);
 
       // Add cross-domain measurement, anonymize IPs
+      //var ga = gtag;
       'use strict';
-      var ga = gtag;
+
       ga('config', 'G-9D3HKKFV1Q', 'auto', {
         'allowLinker': true,
         'anonymize_ip': true,
