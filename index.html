@@ -8,8 +8,15 @@
     [endif] -->
 <html>
   <head>
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-9D3HKKFV1Q" type="text/javascript"></script>
-    <script type="text/javascript">function ga(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],ga("js",new Date),ga("config","G-9D3HKKFV1Q");</script>
+  	<!-- Analytics -->
+  	<script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-9D3HKKFV1Q"></script>
+  	<script data-cfasync="false">
+  	  window.dataLayer = window.dataLayer || [];
+  	  function ga(){dataLayer.push(arguments);}
+  	  ga('js', new Date());
+  	  ga('config', 'G-9D3HKKFV1Q');
+  	</script>
+  	<!-- /Analytics -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
